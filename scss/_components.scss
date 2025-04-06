@@ -1,0 +1,29 @@
+.card-depoimentos {
+  width: 100%;
+  max-width: 38.4rem;
+  background-color: $gray-100;
+  border-radius: 8px;
+  height: 209px;
+  padding: 3.7rem 3.2rem 2.3rem 3.2rem;
+
+  .user {
+    @include flex(row, center, space-between);
+    margin-bottom: 22px;
+  }
+  strong {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 112.00000000000001%;
+    letter-spacing: -1px;
+  }
+  p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0px;
+  }
+}
+
+
