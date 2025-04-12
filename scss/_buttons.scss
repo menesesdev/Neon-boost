@@ -25,3 +25,19 @@
     border: 2px solid $brand-blue-light;
   }
 }
+
+.btn-tertiary {
+  display: inline-block;
+  padding: 16px 20px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 50px;
+  color: white;
+  font-weight: 800;
+  transition: 0.3s ease;
+  &:hover {
+    background-color: white;
+    color: $brand-blue-light;
+    border: 2px solid white;
+  }
+}
