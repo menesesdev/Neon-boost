@@ -3,7 +3,7 @@
   height: 60rem;
   background: url(../img/bg-hero.svg) no-repeat center center;
   padding-top: 125px;
-  .container{
+  .container {
     @include flex(row, flex-start, space-between);
   }
   .texto {
@@ -18,7 +18,7 @@
       color: white;
       margin: 0;
     }
-    .btn-primary{
+    .btn-primary {
       margin: 3rem 0;
     }
   }
@@ -36,39 +36,151 @@
       align-items: center;
     }
   }
-  .image-area-cards{
+  .image-area-cards {
     width: 100%;
     max-width: 60rem;
     margin-right: -18px;
     text-align: center;
-    h1{
+    h1 {
       color: white;
       margin: 0;
       opacity: 0.5;
       font-size: 4.2rem;
       margin-bottom: 3rem;
     }
-    .image-cards{
+    .image-cards {
       position: relative;
       width: 100%;
       height: 50rem;
-      img{
+      img {
         position: absolute;
         transform: scale(0.8);
       }
-      .card-front{
+      .card-front {
         top: 100px;
         left: 0;
         z-index: 3;
       }
-      .card-back{
+      .card-back {
         top: 180px;
         right: 25px;
         z-index: 2;
       }
-      .circle{
+      .circle {
         top: 0;
         right: 0;
+      }
+    }
+  }
+}
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.section-card-neon {
+  padding-top: 129px;
+
+  .left-area,
+  .ilustracao-mockup {
+    width: 100%;
+    max-width: 27.7rem;
+  }
+  .ilustracao-mockup {
+    position: relative;
+    margin-bottom: 129px;
+  }
+  .circle {
+    position: absolute;
+    top: 87px;
+    left: -214px;
+    width: 100%;
+    z-index: -1;
+  }
+  .text-area,
+  .info-txt {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h3 {
+    margin-top: 20px;
+  }
+  p {
+    margin-bottom: 20px;
+  }
+  ul {
+    li {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  h3,
+  p {
+    text-align: center;
+  }
+
+  .right-area {
+    width: 100%;
+    max-width: 80rem;
+    h2 {
+      max-width: 48rem;
+      margin-bottom: 40px;
+    }
+    ul {
+      margin-bottom: 30px;
+    }
+    li {
+      border-bottom: 1px solid rgba(225, 224, 231, 0.9);
+      &:not(first-child) {
+        padding: 20px 0;
+      }
+      @include flex(row, center, space-between);
+    }
+    .info {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      .txt {
+        h3,
+        p {
+          text-align: left;
+        }
+      }
+    }
+    .box-card {
+      margin-top: 30px;
+      width: 100%;
+    
+      height: 410px;
+      background: url(../img/bg-box-card-neon.svg) no-repeat center center;
+      
+      border-radius: 10px;
+      padding: 20px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .text {
+        display: flex;
+        flex-direction: column;
+        h3,
+        h2,
+        p {
+          text-align: start;
+          color: white;
+        }
+      }
+      .image-card{
+        margin-right: -50px;
+        height: 70%;
+      }
+      .btns{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        
       }
     }
   }
