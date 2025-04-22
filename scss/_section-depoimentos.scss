@@ -1,0 +1,41 @@
+.section-depoimentos {
+  .container {
+    display: block;
+  }
+  padding-top: 80px;
+  .texto-topo {
+    padding-bottom: 40px;
+    h2 {
+      font-size: 30px;
+      span {
+        color: $gray-200;
+      }
+    }
+  }
+  .swiper-slide {
+    gap: 20px;
+    margin-right: 0;
+    width: auto;
+    flex-shrink: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .slide-depoimentos {
+    
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .swiper-wrapper {
+    
+    display: flex;
+    width: 100%;
+  }
+}
