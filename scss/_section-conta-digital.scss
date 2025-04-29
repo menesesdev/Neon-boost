@@ -1,0 +1,72 @@
+.section-conta-digital {
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  margin-top: 40px;
+  .text {
+    width: 100%;
+    max-width: 542px;
+
+    h2 {
+      font-size: 3.5rem;
+      font-weight: bold;
+    }
+    span {
+      color: $gray-200;
+    }
+    ul {
+      margin-top: 20px;
+      li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+        .text-info {
+          h4 {
+            font-size: 2rem;
+            font-weight: 600;
+          }
+          p {
+            font-size: 1.4rem;
+            color: $gray-400;
+          }
+        }
+        .icon {
+          width: 50px;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 8px;
+          background-color: $brand-green-light;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+  .image {
+    position: relative;
+    width: 100%;
+    max-width: 712px;
+    height: 598px;
+    margin-right: -18px;
+    left: 12.5rem;
+    img {
+      position: absolute;
+      &.circle {
+        right: 0;
+        bottom: 0;
+      }
+    }
+    .mockup-01{
+      bottom: 40px;
+    }
+    .mockup-02{
+      top: 3px;
+      left: 258px;
+    }
+    .circle-mockup{
+      right: 10px;
+    }
+  }
+}
